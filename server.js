@@ -4,7 +4,7 @@
 const app = require('./app')
 // импортируем библиотеку для работы с Mongodb
 const mongoose = require('mongoose');
-const {DB_HOST}=process.env
+const {DB_HOST, PORT=3000}=process.env
 // console.log(process.env)
 // добавляем пароль и перед ? добавляем название базы данных, к которой хотим подключиться
 // const DB_HOST='mongodb+srv://Alex:kKHXDDRWBhcU62PJ@cluster0.u3myxu4.mongodb.net/users_reader?retryWrites=true&w=majority'
@@ -12,7 +12,7 @@ const {DB_HOST}=process.env
 mongoose.connect(DB_HOST)
 .then(()=>{
   console.log('Connected')
-  app.listen(3000, () => {
+  app.listen(PORT, () => {
   console.log("Server running. Use our API on port: 3000")
 })
 })

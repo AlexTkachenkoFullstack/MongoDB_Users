@@ -1,6 +1,6 @@
-const {contacts}=require('../../models')
+const User=require('../../models')
 const getAll=async (req, res, next) => {
-      const allContacts = await contacts.listContacts();
+      const allContacts = await User.find({});
       res.json({
         status: "success",
         code: 200,

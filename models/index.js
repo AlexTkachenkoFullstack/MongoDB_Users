@@ -1,4 +1,4 @@
-const contacts=require('./contacts/contacts')
+const contacts=require('./contact/contact')
 
 module.exports={
     contacts
