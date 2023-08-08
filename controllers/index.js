@@ -1,13 +1,15 @@
-const getAll=require('./contacts/getAll')
-const getById=require('./contacts/getById')
-const addContact=require('./contacts/addContact')
-const deleteById=require('./contacts/deleteById')
-const updateById=require('./contacts/updateById')
+const getAll=require('./users/getAll')
+const getById=require('./users/getById')
+const addUser=require('./users/addUser')
+const deleteById=require('./users/deleteById')
+const updateById=require('./users/updateById')
+const updateOnline=require('./users/updateOnline')
 
 module.exports={
     getAll,
     getById,
-    addContact,
+    addUser,
     deleteById,
-    updateById
+    updateById,
+    updateOnline
 }

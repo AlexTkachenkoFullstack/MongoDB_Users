@@ -1,7 +1,9 @@
-const HttpErrors=require('./HttpError')
+const HttpError=require('./HttpError')
 const ctrlWrapper=require('./ctrlWrapper')
+const handleMongooseError=require('./handleMongooseError')
 
 module.exports={
-    HttpErrors,
-    ctrlWrapper
+    HttpError,
+    ctrlWrapper,
+    handleMongooseError
 }
